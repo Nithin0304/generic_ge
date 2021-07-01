@@ -1,0 +1,305 @@
+{
+  "data_asset_type": "Dataset",
+  "expectation_suite_name": "test_results",
+  "expectations": [
+    {
+      "expectation_type": "expect_column_to_exist",
+      "kwargs": {
+        "column": "RegNo"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_to_exist",
+      "kwargs": {
+        "column": "BatchCode"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_to_exist",
+      "kwargs": {
+        "column": "Nithin"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_table_row_count_to_be_between",
+      "kwargs": {
+        "max_value": 1100,
+        "min_value": 900
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_table_columns_to_match_ordered_list",
+      "kwargs": {
+        "column_list": [
+          "BatchCode",
+          "RegNo"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_table_columns_to_match_set",
+      "kwargs": {
+        "column_set": [
+          "BatchCode",
+          "RegNo"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_table_row_count_to_equal",
+      "kwargs": {
+        "value": 1001
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_unique",
+      "kwargs": {
+        "column": "BatchCode",
+        "mostly": 0.1
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "BatchCode",
+        "mostly": 0.1
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "RegNo",
+        "mostly": null,
+        "parse_strings_as_datetimes": null,
+        "value_set": [
+          7978987,
+          29108
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_between",
+      "kwargs": {
+        "column": "RegNo",
+        "max_value": 20,
+        "min_value": 0,
+        "mostly": null,
+        "parse_strings_as_datetimes": null,
+        "strict_max": false,
+        "strict_min": false
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_value_lengths_to_equal",
+      "kwargs": {
+        "column": "RegNo",
+        "mostly": null,
+        "value": 5
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_match_regex",
+      "kwargs": {
+        "column": "RegNo",
+        "mostly": null,
+        "regex": "[0-9]*"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_match_regex",
+      "kwargs": {
+        "column": "RegNo",
+        "mostly": 0.1,
+        "regex": "[0-9]*"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_match_regex_list",
+      "kwargs": {
+        "column": "RegNo",
+        "match_on": "any",
+        "mostly": 0.1,
+        "regex_list": [
+          "[0-9]*"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_distinct_values_to_equal_set",
+      "kwargs": {
+        "column": "RegNo",
+        "parse_strings_as_datetimes": null,
+        "value_set": [
+          123132,
+          4535345
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_mean_to_be_between",
+      "kwargs": {
+        "column": "RegNo",
+        "max_value": 100,
+        "min_value": 0,
+        "strict_min": false
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_median_to_be_between",
+      "kwargs": {
+        "column": "RegNo",
+        "max_value": 100,
+        "min_value": 0,
+        "strict_max": false,
+        "strict_min": false
+      },
+      "meta": {}
+    }
+  ],
+  "meta": {
+    "BasicSuiteBuilderProfiler": {
+      "batch_kwargs": {
+        "data_asset_name": "results",
+        "datasource": "great_expect",
+        "limit": 1000,
+        "schema": "wsdc_results",
+        "table": "results"
+      },
+      "created_at": 1624378490.9373229,
+      "created_by": "BasicSuiteBuilderProfiler"
+    },
+    "citations": [
+      {
+        "batch_definition": null,
+        "batch_kwargs": {
+          "data_asset_name": "results",
+          "datasource": "great_expect",
+          "limit": 1000,
+          "schema": "wsdc_results",
+          "table": "results"
+        },
+        "batch_markers": {
+          "ge_load_time": "20210622T161450.606574Z"
+        },
+        "batch_parameters": null,
+        "batch_request": null,
+        "batch_spec": null,
+        "citation_date": "2021-06-22T16:14:50.980289Z",
+        "comment": "BasicSuiteBuilderProfiler added a citation based on the current batch."
+      }
+    ],
+    "columns": {
+      "BatchCode": {
+        "description": ""
+      },
+      "Cgpa": {
+        "description": ""
+      },
+      "DegCode": {
+        "description": ""
+      },
+      "Grade1": {
+        "description": ""
+      },
+      "Grade10": {
+        "description": ""
+      },
+      "Grade11": {
+        "description": ""
+      },
+      "Grade12": {
+        "description": ""
+      },
+      "Grade13": {
+        "description": ""
+      },
+      "Grade14": {
+        "description": ""
+      },
+      "Grade2": {
+        "description": ""
+      },
+      "Grade3": {
+        "description": ""
+      },
+      "Grade4": {
+        "description": ""
+      },
+      "Grade5": {
+        "description": ""
+      },
+      "Grade6": {
+        "description": ""
+      },
+      "Grade7": {
+        "description": ""
+      },
+      "Grade8": {
+        "description": ""
+      },
+      "Grade9": {
+        "description": ""
+      },
+      "Msno": {
+        "description": ""
+      },
+      "Name": {
+        "description": ""
+      },
+      "Nof1": {
+        "description": ""
+      },
+      "Nof2": {
+        "description": ""
+      },
+      "RegNo": {
+        "description": ""
+      },
+      "SecName": {
+        "description": ""
+      },
+      "Sgpa": {
+        "description": ""
+      },
+      "SlNo": {
+        "description": ""
+      },
+      "TotCr1": {
+        "description": ""
+      },
+      "TotCr2": {
+        "description": ""
+      },
+      "YrSemCode": {
+        "description": ""
+      },
+      "reference_id": {
+        "description": ""
+      }
+    },
+    "great_expectations_version": "0.13.19",
+    "notes": {
+      "content": [
+        "#### This is an _example_ suite\n\n- This suite was made by quickly glancing at 1000 rows of your data.\n- This is **not a production suite**. It is meant to show examples of expectations.\n- Because this suite was auto-generated using a very basic profiler that does not know your data like you do, many of the expectations may not be meaningful.\n"
+      ],
+      "format": "markdown"
+    }
+  }
+}
